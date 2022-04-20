@@ -1,0 +1,12 @@
+<div>
+  <ul>
+    <li *ngFor="let tag of tags">
+      <a routerLink="/tags/{{ tag.topic }}">{{ tag.topic }}</a>
+      <ul>
+        <li *ngFor="let work of tag.works">
+          {{ work.title }} - {{ work.author }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

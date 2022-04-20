@@ -1,0 +1,7 @@
+<div *ngFor="let work of works">
+  <a routerLink="/works/{{ work.title }}">{{ work.title }}</a>
+  By {{ work.author }}
+  <ul>
+    <li *ngFor="let tag of work.tags">{{ tag }}</li>
+  </ul>
+</div>

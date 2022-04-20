@@ -1,0 +1,9 @@
+<h1>{{ tagDetail.topic }}</h1>
+
+<ul>
+  <li *ngFor="let work of tagDetail.works">
+    {{ work.title }} - {{ work.author }}
+  </li>
+</ul>
+
+<button type="button" (click)="goBack()">go back</button>
