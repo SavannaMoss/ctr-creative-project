@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { Location } from "@angular/common";
 import { Globals } from "../../globals";
@@ -9,16 +9,16 @@ import { Tag } from "../../models/tag";
   templateUrl: './tag-detail.component.html',
   styleUrls: ['./tag-detail.component.css']
 })
-export class TagDetailComponent implements OnInit {
+export class TagDetailComponent {
   tags: Tag[] = Globals.tags;
   tagDetail!: Tag;
 
   constructor(private route: ActivatedRoute,
-              private location: Location) { }
-
-  ngOnInit(): void {
-    // find values by topic
-    this.getValues();
+              private location: Location) {
+    route.params.subscribe(val => {
+      // find values by topic
+      this.getValues();
+    });
   }
 
   getValues(): void {
@@ -38,5 +38,4 @@ export class TagDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
-
 }

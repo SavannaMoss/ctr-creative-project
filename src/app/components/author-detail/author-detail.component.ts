@@ -1,24 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component }      from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
-import { Location } from '@angular/common';
-import { Globals } from "../../globals";
-import { Work } from "../../models/work";
+import { Location }       from '@angular/common';
+import { Globals }        from "../../globals";
+import { Work }           from "../../models/work";
 
 @Component({
   selector: 'app-author-detail',
   templateUrl: './author-detail.component.html',
   styleUrls: ['./author-detail.component.css']
 })
-export class AuthorDetailComponent implements OnInit {
+export class AuthorDetailComponent {
   works: Work[] = Globals.works;
   authorDetail!: Work;
 
   constructor(private route: ActivatedRoute,
-              private location: Location) { }
-
-  ngOnInit(): void {
-    // find values by author
-    this.getValues();
+              private location: Location) {
+    route.params.subscribe(val => {
+      // find values by author
+      this.getValues();
+    });
   }
 
   getValues(): void {
@@ -34,5 +34,4 @@ export class AuthorDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
-
 }
