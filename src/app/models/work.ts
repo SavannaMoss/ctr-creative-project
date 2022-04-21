@@ -3,5 +3,6 @@ export interface Work {
   author: string;
   unit: number;
   description: string;
+  source: string;
   tags: string[];
 }
