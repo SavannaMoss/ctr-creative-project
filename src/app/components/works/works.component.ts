@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Globals } from "../../globals";
-import { Work } from "../../models/work";
+import { Globals }   from "../../globals";
+import { Work }      from "../../models/work";
 
 @Component({
   selector: 'app-works',

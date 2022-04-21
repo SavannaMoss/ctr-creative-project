@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Globals } from "../../globals";
-import { Tag } from "../../models/tag";
+import { Globals }   from "../../globals";
+import { Tag }       from "../../models/tag";
 
 @Component({
   selector: 'app-tags',
