@@ -6,85 +6,87 @@ export class Globals {
     {
       title: 'White Privilege and Male Privilege',
       author: 'Peggy McIntosh',
+      unit: 1,
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
       tags: ['race', 'racism', 'feminism', 'sexism', 'misogyny', 'privilege']
     },
     {
       title: 'Defining Racism',
       author: 'Beverly Tatum',
+      unit: 1,
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
       tags: ['race', 'racism']
     },
-    // {
-    //   name: 'Charles Johnson',
-    //   work: {
-    //     title: 'Modernity, Philosophy, and Race',
-    //     tags: ['race', 'racism']
-    //   }
-    // },
-    // {
-    //   name: 'Sojourner Truth',
-    //   work: {
-    //     title: 'Ain\'t I a Woman? (speech)',
-    //     tags: ['race', 'racism', 'feminism', 'sexism', 'misogyny']
-    //   }
-    // },
-    // {
-    //   name: 'W.E.B. Du Bois',
-    //   work: {
-    //     title: 'The Souls of Black Folks',
-    //     tags: ['race', 'racism']
-    //   }
-    // },
-    // {
-    //   name: 'Frantz Fanon',
-    //   work: {
-    //     title: 'The Fact of Blackness',
-    //     tags: ['race', 'racism']
-    //   }
-    // },
-    // {
-    //   name: 'Charles Mills',
-    //   work: {
-    //     title: 'The Racial Contract',
-    //     tags: ['race', 'racism']
-    //   }
-    // },
-    // {
-    //   name: 'George Yancy',
-    //   work: {
-    //     title: 'Black Bodies, White Gazes',
-    //     tags: ['race', 'racism']
-    //   }
-    // },
-    // {
-    //   name: 'bell hooks',
-    //   work: {
-    //     title: 'Ain\'t I a Woman?',
-    //     tags: ['race', 'racism', 'feminism', 'sexism', 'misogyny']
-    //   }
-    // },
-    // {
-    //   name: 'Kimberlé Crenshaw',
-    //   work: {
-    //     title: 'Demarginalizing Intersection',
-    //     tags: ['race', 'racism', 'feminism', 'sexism', 'misogyny', 'intersectionality', 'law', 'philosophy']
-    //   }
-    // },
-    // {
-    //   name: 'Boram Jeong',
-    //   work: {
-    //     title: 'A Phenomenology of Invisibility: On the Absence of Yellow Bodies',
-    //     tags: ['race', 'racism']
-    //   }
-    // },
-    // {
-    //   name: 'Alia Al-Saji',
-    //   work: {
-    //     title: 'A Phenomenology of Hesitation',
-    //     tags: ['race', 'racism']
-    //   }
-    // }
+    {
+      title: 'Modernity, Philosophy, and Race',
+      author: 'Charles Johnson',
+      unit: 1,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism']
+    },
+    {
+      title: 'Ain\'t I a Woman? (speech)',
+      author: 'Sojourner Truth',
+      unit: 1,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism', 'feminism', 'sexism', 'misogyny']
+    },
+    {
+      title: 'The Souls of Black Folks',
+      author: 'W.E.B. Du Bois',
+      unit: 1,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism']
+    },
+    {
+      title: 'The Fact of Blackness',
+      author: 'Frantz Fanon',
+      unit: 1,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism']
+    },
+    {
+      title: 'The Racial Contract',
+      author: 'Charles Mills',
+      unit: 2,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism']
+    },
+    {
+      title: 'Black Bodies, White Gazes',
+      author: 'George Yancy',
+      unit: 3,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism']
+    },
+    {
+      title: 'Ain\'t I a Woman?',
+      author: 'bell hooks',
+      unit: 4,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism', 'feminism', 'sexism', 'misogyny']
+    },
+    {
+      title: 'Demarginalizing Intersection',
+      author: 'Kimberlé Crenshaw',
+      unit: 4,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism', 'feminism', 'sexism', 'misogyny', 'intersectionality', 'law', 'philosophy']
+    },
+    {
+      title: 'A Phenomenology of Invisibility',
+      author: 'Boram Jeong',
+      unit: 4,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism']
+    },
+    {
+      title: 'A Phenomenology of Hesitation',
+      author: 'Alia Al-Saji',
+      unit: 4,
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
+      tags: ['race', 'racism']
+    }
   ];
 
   public static tags: Tag[] = Globals.getAllTags();

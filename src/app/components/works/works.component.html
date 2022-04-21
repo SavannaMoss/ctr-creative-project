@@ -1,13 +1,16 @@
 <h1>Works</h1>
 <p>Click on a work to learn about it!</p>
 
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center mb-3">
   <div class="list-group">
     <span *ngFor="let work of works"
           class="list-group-item list-group-item-action">
+      <div class="d-flex justify-content-between">
         <h5 class="mb-1">
           <a routerLink="/works/{{ work.title }}" class="work-title">{{ work.title }}</a>
         </h5>
+        <small>Unit {{ work.unit }}</small>
+      </div>
 
         <p class="mb-1">
           By {{ work.author }}
