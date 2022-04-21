@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Globals } from "../../globals";
 import { Work } from "../../models/work";
 
@@ -7,13 +7,9 @@ import { Work } from "../../models/work";
   templateUrl: './authors.component.html',
   styleUrls: ['./authors.component.css']
 })
-export class AuthorsComponent implements OnInit {
+export class AuthorsComponent {
   works: Work[] = Globals.works;
 
   constructor() {
   }
-
-  ngOnInit(): void {
-  }
-
 }
