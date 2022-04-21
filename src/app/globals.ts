@@ -1,5 +1,5 @@
 import { Work } from "./models/work";
-import { Tag } from "./models/tag";
+import { Tag }  from "./models/tag";
 
 export class Globals {
   public static works: Work[] = [
