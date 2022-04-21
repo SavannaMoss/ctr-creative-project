@@ -1,9 +1,26 @@
 <h1>{{ tagDetail.topic }}</h1>
+<p>Click on a work to learn about it!</p>
 
-<ul>
-  <li *ngFor="let work of tagDetail.works">
-    {{ work.title }} - {{ work.author }}
-  </li>
-</ul>
+<div class="d-flex justify-content-center">
+  <div class="list-group">
+    <span *ngFor="let work of tagDetail.works"
+          class="list-group-item list-group-item-action">
+        <h5 class="mb-1">
+          <a routerLink="/works/{{ work.title }}" class="work-title">{{ work.title }}</a>
+        </h5>
 
-<button type="button" (click)="goBack()">go back</button>
+        <p class="mb-1">
+          By <a routerLink="/authors/{{ work.author }}" class="work-author">{{ work.author }}</a>
+        </p>
+        <small>
+          tags:
+          <span *ngFor="let tag of work.tags; let i = index">
+            <a routerLink="/tags/{{ tag }}" class="work-tag">{{ tag }}</a>
+            <span *ngIf="i < work.tags.length-1">, </span>
+          </span>
+        </small>
+    </span>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary mt-3" (click)="goBack()">back</button>

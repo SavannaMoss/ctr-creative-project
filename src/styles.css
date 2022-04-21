@@ -8,6 +8,15 @@ nav {
   background-color: #3c1361;
 }
 
+.btn-primary {
+  background-color: #3c1361;
+  border: #3c1361;
+}
+
+.btn-primary:hover {
+  background-color: mediumpurple;
+}
+
 .list-group-item {
   width: 30rem;
 }
