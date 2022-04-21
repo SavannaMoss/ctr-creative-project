@@ -1,12 +1,12 @@
-<div>
-  <ul>
-    <li *ngFor="let tag of tags">
-      <a routerLink="/tags/{{ tag.topic }}">{{ tag.topic }}</a>
-      <ul>
-        <li *ngFor="let work of tag.works">
-          {{ work.title }} - {{ work.author }}
-        </li>
-      </ul>
+<h1>Tags</h1>
+<p>Click on a topic to learn what works have been tagged with it!</p>
+
+<div class="d-flex justify-content-center">
+  <ul class="list-group">
+    <li *ngFor="let tag of tags"
+      class="list-group-item d-flex justify-content-between align-items-center">
+      <a routerLink="/tags/{{ tag.topic }}" class="work-tag">{{ tag.topic }}</a>
+      <span class="badge bg-dark rounded-pill">{{ tag.works.length }}</span>
     </li>
   </ul>
 </div>

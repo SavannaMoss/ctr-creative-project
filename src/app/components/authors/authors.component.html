@@ -1,6 +1,24 @@
-<div *ngFor="let work of works">
-  <a routerLink="/authors/{{ work.author }}">{{ work.author }}</a> - {{ work.title }}
-  <ul>
-    <li *ngFor="let tag of work.tags">{{ tag }}</li>
-  </ul>
+<h1>Authors</h1>
+<p>Click on an author to learn about them!</p>
+
+<div class="d-flex justify-content-center">
+  <div class="list-group">
+    <span *ngFor="let work of works"
+          class="list-group-item list-group-item-action">
+        <h5 class="mb-1">
+          <a routerLink="/authors/{{ work.author }}" class="work-author">{{ work.author }}</a>
+        </h5>
+
+        <p class="mb-1">
+          <a routerLink="/works/{{ work.title }}" class="work-title">{{ work.title }}</a>
+        </p>
+        <small>
+          tags:
+          <span *ngFor="let tag of work.tags; let i = index">
+            <a routerLink="/tags/{{ tag }}" class="work-tag">{{ tag }}</a>
+            <span *ngIf="i < work.tags.length-1">, </span>
+          </span>
+        </small>
+    </span>
+  </div>
 </div>
