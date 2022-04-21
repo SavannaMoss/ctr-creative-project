@@ -6,13 +6,13 @@ export class Globals {
     {
       title: 'White Privilege and Male Privilege',
       author: 'Peggy McIntosh',
-      description: '',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
       tags: ['race', 'racism', 'feminism', 'sexism', 'misogyny', 'privilege']
     },
     {
       title: 'Defining Racism',
       author: 'Beverly Tatum',
-      description: '',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi sapien, imperdiet ut nulla sed, porttitor efficitur risus. Aliquam erat volutpat.',
       tags: ['race', 'racism']
     },
     // {

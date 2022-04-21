@@ -1,4 +1,19 @@
-<h1>{{ workDetail.title }}</h1>
-<p>{{ workDetail.author }}</p>
+<h1 class="work-title">{{ workDetail.title }}</h1>
 
-<button type="button" (click)="goBack()">go back</button>
+<div class="d-flex justify-content-center">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ workDetail.author }}</h5>
+      <p class="card-text">{{ workDetail.description }}</p>
+      <small>
+        tags:
+        <span *ngFor="let tag of workDetail.tags; let i = index">
+            <a routerLink="/tags/{{ tag }}" class="work-tag">{{ tag }}</a>
+            <span *ngIf="i < workDetail.tags.length-1">, </span>
+          </span>
+      </small>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary mt-3" (click)="goBack()">back</button>
