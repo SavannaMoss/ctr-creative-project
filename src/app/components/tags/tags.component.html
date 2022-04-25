@@ -6,7 +6,7 @@
     <li *ngFor="let tag of tags"
         class="list-group-item d-flex justify-content-between align-items-center">
       <a routerLink="/tags/{{ tag.topic }}" class="work-tag">{{ tag.topic }}</a>
-      <span class="badge bg-dark rounded-pill">{{ tag.works.length }}</span>
+      <span class="badge badge-dark rounded-pill">{{ tag.works.length }}</span>
     </li>
   </ul>
 </div>

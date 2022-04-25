@@ -17,6 +17,10 @@ nav {
   background-color: mediumpurple;
 }
 
+.badge {
+  background-color: #3c1361;
+}
+
 .card-title {
   font-weight: bold;
 }
