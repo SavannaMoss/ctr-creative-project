@@ -10,7 +10,7 @@
         <small>Unit {{ workDetail.unit }}</small>
       </div>
 
-      <p class="card-text">{{ workDetail.description }}</p>
+      <p class="card-text">{{ workDetail.description }}<sup><a href="{{ workDetail.source}}" target="_blank">[1]</a></sup></p>
       <small>
         tags:
         <span *ngFor="let tag of workDetail.tags; let i = index">
